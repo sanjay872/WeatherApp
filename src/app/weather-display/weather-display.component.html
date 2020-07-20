@@ -1,0 +1,8 @@
+<div *ngIf="weatherData!=null">
+  <img [src]="timeImg" id="timeImg">
+  <img [src]="weatherIcon" id="weatherIcon" class="bg-light text-center" id="weatherIcon">
+  <div class="text-muted text-uppercase text-center" id="details">
+    <p id="weather">{{weatherData.Temperature.celsius}} C | {{weatherData.Temperature.fahrenheit}} F</p>
+    <p id="temp">{{weatherData.WeatherText}}</p>
+  </div>
+</div>
